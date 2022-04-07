@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+.container {
+  color: blue;
+}
+
 /* Header - Nav bar */
 .nav-container {
   display: flex;

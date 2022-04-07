@@ -10,7 +10,7 @@
     <title>Am's Portfolio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/css/style/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -19,6 +19,82 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <header class="header-container">
+      <nav class="nav-container">
+        <div class="nav-name">Am's portfolio</div>
+        <div class="navlinks-container">
+          <a class="navlinks-item" href="#intro">About me</a>
+          <a class="navlinks-item" href="#projects">Projects</a>
+          <a class="navlinks-item" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="highlight">
+        <div class="intro" id="intro">
+          <img class="avatar" alt="avatar" src="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            nulla sit facere magnam voluptatem aperiam, porro quos explicabo
+            voluptates in numquam laboriosam dolorem eius illo iusto ipsam
+            facilis amet magni?
+          </p>
+        </div>
+        <div class="showcase" id="showcase">
+          <p>My showcased project</p>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="project-menu">
+          <p>My projects</p>
+          <div class="filters">
+            <button class="filter-btn" type="button" id="advertising-btn">
+              Advertising
+            </button>
+            <button class="filter-btn" type="button" id="sport-btn">
+              Sport
+            </button>
+            <button class="filter-btn" type="button" id="games-btn">
+              Games
+            </button>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-item" id="wordwheel" data-tag="games">
+            Wordwheel
+          </div>
+          <div class="project-item" id="semantic" data-tag="advertising">
+            HTML semantics
+          </div>
+          <div class="project-item" id="javascript" data-tag="games">
+            Javascript
+          </div>
+          <div class="project-item" id="api" data-tag="sport">Using API</div>
+          <div class="project-item" id="nodejs" data-tag="sport">
+            Using NodeJS
+          </div>
+          <div class="project-item" id="knots" data-tag="games">
+            Knots and Crosses
+          </div>
+          <div class="project-item" id="sql" data-tag="advertising">
+            Using SQL
+          </div>
+          <div class="project-item" id="orm" data-tag="games">Using ORM</div>
+          <div class="project-item" id="pwa" data-tag="sport">Using PWA</div>
+          <div class="project-item" id="react" data-tag="sport">
+            Using React
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <div class="footer-text">How to contact me</div>
+      <div class="footer-links-container">
+        <a class="footer-link-item" href="">GitHub</a>
+        <a class="footer-link-item" href="">LinkedIn</a>
+        <a class="footer-link-item" href="">Email</a>
+      </div>
+    </footer>
 
     <script src="" async defer></script>
   </body>

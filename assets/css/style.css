@@ -1,0 +1,44 @@
+/* This section sets up the key variables and settings for the page*/
+
+body {
+  margin: 0;
+}
+
+/* Header - Nav bar */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Main part - Highlights section*/
+.highlight {
+  display: flex;
+  flex-direction: row;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Main part - Projects section*/
+.project-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Footer - Contact links */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-link-item {
+  margin: 10px;
+}

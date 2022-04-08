@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Am's Portfolio</title>
+    <title>Amelie's Portfolio</title>
     <meta name="description" content="portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -23,35 +23,58 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <!--Header-->
     <header class="header-container">
-      <nav class="nav-container">
-        <div class="nav-name">Am's portfolio</div>
-        <div class="navlinks-container">
+      <nav class="rowcont nav-container">
+        <div class="rowcont nav-name">
+          <p>Amelie's portfolio</p>
+          <button class="lang-btn" type="button">En</button>
+          <!--This button will be developed in later version - It will allow to change the language of the portfolio-->
+        </div>
+        <div class="rowcont navlinks-container">
           <a class="navlinks-item" href="#intro">About me</a>
           <a class="navlinks-item" href="#projects">Projects</a>
           <a class="navlinks-item" href="#contact">Contact</a>
         </div>
       </nav>
     </header>
+    <!--Main part of the page-->
     <main>
-      <section class="highlight">
-        <div class="intro" id="intro">
-          <img class="avatar" alt="avatar" src="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            nulla sit facere magnam voluptatem aperiam, porro quos explicabo
-            voluptates in numquam laboriosam dolorem eius illo iusto ipsam
-            facilis amet magni?
-          </p>
+      <!-- About me section-->
+      <section class="rowcont about-container">
+        <!--About me - Image + Paragraph-->
+        <div class="rowcont intro" id="intro">
+          <div class="intro-img">
+            <img class="avatar" alt="avatar" src="" />
+          </div>
+          <div class="intro-text">
+            <h1>Amelie Pira</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              nulla sit facere magnam voluptatem aperiam, porro quos explicabo
+              voluptates in numquam laboriosam dolorem eius illo iusto ipsam
+              facilis amet magni?
+            </p>
+          </div>
         </div>
-        <div class="showcase" id="showcase">
-          <p>My showcased project</p>
-          <p>A few words about the showcased project</p>
+        <!-- About me - Skills list-->
+        <div class="intro-skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+          </ul>
         </div>
       </section>
       <hr />
+      <!-- My Projects-->
       <section class="projects" id="projects">
-        <div class="project-menu">
+        <!--Projects - Title and future menu buttons-->
+        <div class="rowcont project-menu">
           <p>My projects</p>
           <div class="filters">
             <button class="filter-btn" type="button" id="advertising-btn">
@@ -65,50 +88,58 @@
             </button>
           </div>
         </div>
-        <div class="container project-container">
+        <!-- Projects - The section with the showcased project in larger box and additional details-->
+        <div class="rowcont showcase" id="showcase">
+          <h2>My showcased project</h2>
+          <p>A few words about the showcased project</p>
+        </div>
+        <!--Projects - The section with the projects card for all other projects-->
+        <div class="rowcont project-container">
           <div class="project-item" id="wordwheel" data-tag="games">
             Wordwheel
           </div>
-          <div class="project-item" id="semantic" data-tag="advertising">
-            HTML semantics
+          <div class="project-item" id="semantic" data-tag="html">
+            Refactor for HTML semantics
           </div>
-          <div class="project-item" id="javascript" data-tag="games">
-            Javascript
+          <div class="project-item" id="portfolio" data-tag="html">
+            Portfolio structure
           </div>
-          <div class="project-item" id="api" data-tag="sport">Using API</div>
-          <div class="project-item" id="nodejs" data-tag="sport">
-            Using NodeJS
+          <div class="project-item" id="passgen" data-tag="forms">
+            Password Generator
           </div>
-          <div class="project-item" id="knots" data-tag="games">
-            Knots and Crosses
+          <div class="project-item" id="quiz" data-tag="games">Code Quiz</div>
+          <div class="project-item" id="planner" data-tag="forms">
+            Day Planner
           </div>
-          <div class="project-item" id="sql" data-tag="advertising">
-            Using SQL
+          <div class="project-item" id="weather" data-tag="html">
+            Weather Dashboard
           </div>
-          <div class="project-item" id="orm" data-tag="games">Using ORM</div>
-          <div class="project-item" id="pwa" data-tag="sport">Using PWA</div>
-          <div class="project-item" id="react" data-tag="sport">
-            Using React
+          <div class="project-item" id="project1" data-tag="games">
+            Project 1
           </div>
+        </div>
+      </section>
+      <!--Contact me-->
+      <section class="contact-container">
+        <h2>How to contact me</h2>
+        <div class="rowcont contact-links-container">
+          <a class="contact-link-item" href=""
+            ><i class="fa-brands fa-github"></i> Github
+          </a>
+          <a class="contact-link-item" href=""
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a class="contact-link-item" href=""
+            ><i class="fa-regular fa-envelope"></i> Email
+          </a>
         </div>
       </section>
     </main>
     <hr />
-    <footer class="container footer-container">
-      <div class="footer-text">How to contact me</div>
-      <div class="footer-links-container">
-        <a class="footer-link-item" href=""
-          ><i class="fa-brands fa-github"></i> Github
-        </a>
-        <a class="footer-link-item" href=""
-          ><i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-        <a class="footer-link-item" href=""
-          ><i class="fa-regular fa-envelope"></i> Email
-        </a>
-      </div>
+    <!--Footer-->
+    <footer class="footer-container">
+      <div class="footer-text">My portfolio - Amelie Pira</div>
+      <div class="footer-text">2022</div>
     </footer>
-
-    <script src="" async defer></script>
   </body>
 </html>

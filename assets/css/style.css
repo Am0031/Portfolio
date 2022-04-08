@@ -3,37 +3,33 @@
 body {
   margin: 0;
 }
-
-.container {
+/* All the containers that need to be flex row are tagged with this class */
+.rowcont {
   color: blue;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Header - Nav bar */
 .nav-container {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
-/* Main part - Highlights section*/
-.highlight {
-  display: flex;
-  flex-direction: row;
-}
-.intro {
-  display: flex;
-  flex-direction: row;
+/* Main part - About me section*/
+.showcase {
 }
 
 /*Main part - Projects section*/
 .project-menu {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .project-container {
-  display: flex;
   flex-flow: row wrap;
+}
+
+/*Main part - Contact me section*/
+.contact-link-item {
+  margin: 10px;
 }
 
 /* Footer - Contact links */
@@ -41,8 +37,4 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer-link-item {
-  margin: 10px;
 }

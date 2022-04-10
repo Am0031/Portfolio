@@ -1,11 +1,18 @@
 /* This section sets up the key variables and settings for the page*/
-
+:root {
+  font-size: 15px;
+}
 body {
-  margin: 0;
+  margin: 10px;
+  background-color: #e6e6ff;
+  font-family: "Work Sans", sans-serif;
 }
 /* All the containers that need to be flex row are tagged with this class */
-.rowcont {
-  color: blue;
+.always-row {
+  display: flex;
+  flex-direction: row;
+}
+.stackable {
   display: flex;
   flex-direction: row;
 }
@@ -13,18 +20,90 @@ body {
 /* Header - Nav bar */
 .nav-container {
   justify-content: space-between;
+  align-items: center;
+  background-color: #4d4dff;
+  color: white;
+  margin-bottom: 5px;
 }
 
 /* Main part - About me section*/
-.showcase {
+.about-container {
+  align-items: stretch;
+}
+.intro {
+  align-items: center;
+  box-sizing: border-box;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0px 5px 0px 5px;
+  padding: 5px;
+}
+.intro-skills {
+  align-items: center;
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0px 5px 0px 5px;
+  padding: 5px;
+}
+.avatar {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
 }
 
 /*Main part - Projects section*/
 .project-menu {
   justify-content: space-between;
+  align-items: center;
+}
+
+.showcase {
+  height: 500px;
+  width: 100%;
+  border: 2px solid black;
 }
 .project-container {
   flex-flow: row wrap;
+  justify-content: center;
+}
+
+.project-item {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.project-item-img {
+  height: 80%;
+  background-color: white;
+  justify-content: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+}
+.project-item-text {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  background-color: rgb(252, 243, 231);
+  opacity: 0.75;
+}
+
+.project-item:hover .image {
+  opacity: 1;
+}
+.project-item:hover .project-item-text {
+  opacity: 1;
 }
 
 /*Main part - Contact me section*/
@@ -37,4 +116,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .stackable {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .intro-skills {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
 }

@@ -10,6 +10,12 @@
     <title>Amelie's Portfolio</title>
     <meta name="description" content="portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/160a172e5c.js"
@@ -25,13 +31,13 @@
     <![endif]-->
     <!--Header-->
     <header class="header-container">
-      <nav class="rowcont nav-container">
-        <div class="rowcont nav-name">
+      <nav class="stackable nav-container">
+        <div class="always-row nav-name">
           <p>Amelie's portfolio</p>
           <button class="lang-btn" type="button">En</button>
           <!--This button will be developed in later version - It will allow to change the language of the portfolio-->
         </div>
-        <div class="rowcont navlinks-container">
+        <div class="always-row navlinks-container">
           <a class="navlinks-item" href="#intro">About me</a>
           <a class="navlinks-item" href="#projects">Projects</a>
           <a class="navlinks-item" href="#contact">Contact</a>
@@ -41,11 +47,11 @@
     <!--Main part of the page-->
     <main>
       <!-- About me section-->
-      <section class="rowcont about-container">
+      <section class="stackable about-container">
         <!--About me - Image + Paragraph-->
-        <div class="rowcont intro" id="intro">
+        <div class="always-row intro" id="intro">
           <div class="intro-img">
-            <img class="avatar" alt="avatar" src="" />
+            <img class="avatar" alt="avatar" src="./assets/images/amelie.png" />
           </div>
           <div class="intro-text">
             <h1>Amelie Pira</h1>
@@ -61,12 +67,12 @@
         <div class="intro-skills">
           <h2>Skills</h2>
           <ul>
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
+            <li>Basic HTML</li>
+            <li>Basic CSS</li>
+            <li>Basic Javascript</li>
+            <li>Other</li>
+            <li>Other</li>
+            <li>Other</li>
           </ul>
         </div>
       </section>
@@ -74,7 +80,7 @@
       <!-- My Projects-->
       <section class="projects" id="projects">
         <!--Projects - Title and future menu buttons-->
-        <div class="rowcont project-menu">
+        <div class="always-row project-menu">
           <p>My projects</p>
           <div class="filters">
             <button class="filter-btn" type="button" id="advertising-btn">
@@ -89,17 +95,34 @@
           </div>
         </div>
         <!-- Projects - The section with the showcased project in larger box and additional details-->
-        <div class="rowcont showcase" id="showcase">
+        <div class="stackable showcase" id="showcase">
+          <a class="project-item-img" href=""
+            ><img class="image"
+              src="./assets/images/construction.png"
+              alt="construction website picture"
+          /></a>
           <h2>My showcased project</h2>
           <p>A few words about the showcased project</p>
         </div>
         <!--Projects - The section with the projects card for all other projects-->
-        <div class="rowcont project-container">
+        <div class="always-row project-container">
           <div class="project-item" id="wordwheel" data-tag="games">
             Wordwheel
           </div>
           <div class="project-item" id="semantic" data-tag="html">
-            Refactor for HTML semantics
+            <a
+              class="project-item-img"
+              href="https://am0031.github.io/HTML-Semantics-Refactoring/"
+              ><img class="image"
+                src="./assets/images/semantics.png"
+                alt="semantics project picture"
+            /></a>
+            <div class="project-item-text">
+              <h3>Refactor for HTML semantics</h3>
+              <a href="https://github.com/Am0031/HTML-Semantics-Refactoring"
+                ><i class="fa-brands fa-github"></i> Go to Github repository</a
+              >
+            </div>
           </div>
           <div class="project-item" id="portfolio" data-tag="html">
             Portfolio structure
@@ -122,7 +145,7 @@
       <!--Contact me-->
       <section class="contact-container">
         <h2>How to contact me</h2>
-        <div class="rowcont contact-links-container">
+        <div class="always-row contact-links-container">
           <a class="contact-link-item" href=""
             ><i class="fa-brands fa-github"></i> Github
           </a>

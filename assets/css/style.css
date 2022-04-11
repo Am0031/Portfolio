@@ -2,11 +2,17 @@
 :root {
   font-size: 15px;
   --background: #eeeaf6;
-  --secondary: #f0ddea;
+  --secondary: #eeeeee;
   --primary: #563ea6;
   --primary-variant: #6145ae;
-  --secondary-variant: #ae4592;
+  --secondary-variant: #424242;
+  --text-black: #000000;
+  --text-white: #ffffff;
   --error: #d77fa1;
+}
+
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 20px;
@@ -59,13 +65,14 @@ button {
 .nav-container {
   justify-content: space-between;
   background-color: var(--primary);
-  color: white;
+  color: var(--text-white);
   margin-bottom: 5px;
 }
 .nav-name,
 .navlinks-item {
   margin: 10px;
   text-decoration: none;
+  color: var(--text-white);
 }
 
 /* Main part - About me section*/
@@ -83,9 +90,7 @@ button {
 }
 .intro-skills {
   align-items: center;
-  box-sizing: border-box;
   width: 20%;
-  /*height: 100%;*/
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0px 5px 0px 5px;

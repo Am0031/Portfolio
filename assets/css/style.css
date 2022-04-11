@@ -8,6 +8,8 @@
   --secondary-variant: #424242;
   --text-black: #000000;
   --text-white: #ffffff;
+  --text-box: #ffffff;
+  --card-text-box: rgb(252, 243, 231);
   --error: #d77fa1;
 }
 
@@ -26,6 +28,10 @@ h4,
 h5,
 h6 {
   margin: 10px 10px 10px 10px;
+}
+
+p {
+  margin: 0 0.6rem 0 0.6rem;
 }
 button {
   border-radius: 4px;
@@ -83,7 +89,7 @@ button {
   align-items: center;
   box-sizing: border-box;
   width: 80%;
-  background-color: white;
+  background-color: var(--text-box);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0px 5px 0px 5px;
   padding: 5px;
@@ -91,7 +97,7 @@ button {
 .intro-skills {
   align-items: center;
   width: 20%;
-  background-color: white;
+  background-color: var(--text-box);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0px 5px 0px 5px;
   padding: 5px;
@@ -108,17 +114,40 @@ button {
   align-items: center;
 }
 
+/* This is the larger card with the showcased project */
 .showcase-container {
   height: 500px;
   width: 100%;
   border: 2px solid black;
+  position: relative;
 }
+.showcase-img {
+  height: 80%;
+  width: 100%;
+  opacity: 0.75;
+}
+.showcase-text-container {
+  width: auto;
+  padding: 0.5rem;
+  flex-grow: 2;
+  background-color: var(--card-text-box);
+  width: 100%;
+  opacity: 0.75;
+}
+.showcase-container:hover .showcase-img {
+  opacity: 1;
+}
+.showcase-container:hover .showcase-text-container {
+  opacity: 1;
+}
+
+/* This is the pection with all the other project cards*/
 .project-container {
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.project-item {
+.project-card {
   width: 500px;
   height: 500px;
   border: 1px solid black;
@@ -127,7 +156,7 @@ button {
   flex-direction: column;
   align-items: stretch;
 }
-.project-item-img {
+.project-card-img {
   height: 80%;
   background-color: white;
   justify-content: center;
@@ -138,7 +167,7 @@ button {
   width: 100%;
   opacity: 0.75;
 }
-.project-item-text {
+.project-card-text {
   width: 100%;
   height: 20%;
   text-align: center;
@@ -146,10 +175,10 @@ button {
   opacity: 0.75;
 }
 
-.project-item:hover .image {
+.project-card:hover .image {
   opacity: 1;
 }
-.project-item:hover .project-item-text {
+.project-card:hover .project-card-text {
   opacity: 1;
 }
 
@@ -178,7 +207,7 @@ button {
     width: 100%;
     margin: 5px 0px 5px 0px;
   }
-  .project-item {
+  .project-card {
     width: 85vw;
     height: 40vh;
   }

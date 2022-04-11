@@ -89,11 +89,11 @@
         <div class="always-row project-menu">
           <h2>My projects</h2>
           <div class="filters">
-            <button class="filter-btn" type="button" id="advertising-btn">
-              Advertising
+            <button class="filter-btn" type="button" id="forms-btn">
+              Forms
             </button>
-            <button class="filter-btn" type="button" id="sport-btn">
-              Sport
+            <button class="filter-btn" type="button" id="html-btn">
+              HTML
             </button>
             <button class="filter-btn" type="button" id="games-btn">
               Games
@@ -101,53 +101,61 @@
           </div>
         </div>
         <!-- Projects - The section with the showcased project in larger box and additional details-->
-        <div class="stackable showcase-container" id="showcase">
-          <a class="project-item-img" href=""
-            ><img
+        <div class="always-column showcase-container" id="showcase">
+          <div class="showcase-img">
+            <a href="#"><img
               class="image"
               src="./assets/images/construction.png"
               alt="construction website picture"
-          /></a>
-          <div class="always-column showcase-text-container">
+            /></a>
+          </div>
+          <div class="always-column centered-on-main showcase-text-container">
             <h3>Construction company website</h3>
-            <p>A few words about the construction company website project</p>
+            <p>Working with an independent builder to develop a simple but effective website and promote his services</p>
+            <div>
+              <a href="#"
+              ><i class="fa-brands fa-github"></i> Go to Github repository</a
+            >
+            <a href="#"
+            ><i class="fa-solid fa-earth-americas"></i> Go to the official website</a
+          >
+            </div>
           </div>
         </div>
         <!--Projects - The section with the projects card for all other projects-->
         <div class="always-row project-container">
-          <div class="project-item" id="wordwheel" data-tag="games">
+          <div class="project-card" id="wordwheel" data-tag="games">
             Wordwheel
           </div>
-          <div class="project-item" id="semantic" data-tag="html">
-            <a
-              class="project-item-img"
-              href="https://am0031.github.io/HTML-Semantics-Refactoring/"
-              ><img
-                class="image"
-                src="./assets/images/semantics.png"
-                alt="semantics project picture"
-            /></a>
-            <div class="project-item-text">
+          <div class="project-card" id="semantic" data-tag="html">
+            <div class="project-card-img"><a
+            href="https://am0031.github.io/HTML-Semantics-Refactoring/"
+            ><img
+            class="image"
+            src="./assets/images/semantics.png"
+            alt="semantics project picture"
+            /></a></div>
+            <div class="project-card-text">
               <h4>Refactor for HTML semantics</h4>
-              <a href="https://github.com/Am0031/HTML-Semantics-Refactoring"
-                ><i class="fa-brands fa-github"></i> Go to Github repository</a
-              >
+              <div><a href="https://github.com/Am0031/HTML-Semantics-Refactoring"
+              ><i class="fa-brands fa-github"></i> Go to Github repository</a
+              ></div>
             </div>
           </div>
-          <div class="project-item" id="portfolio" data-tag="html">
+          <div class="project-card" id="portfolio" data-tag="html">
             Portfolio structure
           </div>
-          <div class="project-item" id="passgen" data-tag="forms">
+          <div class="project-card" id="pass-gen" data-tag="forms">
             Password Generator
           </div>
-          <div class="project-item" id="quiz" data-tag="games">Code Quiz</div>
-          <div class="project-item" id="planner" data-tag="forms">
+          <div class="project-card" id="quiz" data-tag="games">Code Quiz</div>
+          <div class="project-card" id="planner" data-tag="forms">
             Day Planner
           </div>
-          <div class="project-item" id="weather" data-tag="html">
+          <div class="project-card" id="weather" data-tag="html">
             Weather Dashboard
           </div>
-          <div class="project-item" id="project1" data-tag="games">
+          <div class="project-card" id="project1" data-tag="games">
             Project 1
           </div>
         </div>

@@ -1,16 +1,20 @@
 /* This section sets up the key variables and settings for the page*/
 :root {
-  font-size: 15px;
   --background: #eeeaf6;
   --secondary: #eeeeee;
-  --primary: #563ea6;
+  --primary: #baabda;
   --primary-variant: #6145ae;
   --secondary-variant: #424242;
   --text-black: #000000;
   --text-white: #ffffff;
   --text-box: #ffffff;
   --card-text-box: rgb(252, 243, 231);
+  --link-hover: #8e2657;
+  --link-hover-light: #fdeff4;
   --error: #d77fa1;
+}
+html {
+  font-size: 15px;
 }
 
 * {
@@ -70,15 +74,19 @@ button {
 /* Header - Nav bar */
 .nav-container {
   justify-content: space-between;
-  background-color: var(--primary);
+  background-color: var(--primary-variant);
   color: var(--text-white);
   margin-bottom: 5px;
 }
 .nav-name,
-.navlinks-item {
+.navlink-text {
   margin: 10px;
   text-decoration: none;
   color: var(--text-white);
+}
+.navlink-text:hover {
+  color: var(--link-hover-light);
+  font-weight: 600;
 }
 
 /* Main part - About me section*/
@@ -141,7 +149,7 @@ button {
   opacity: 1;
 }
 
-/* This is the pection with all the other project cards*/
+/* This is the section with all the other project cards*/
 .project-container {
   flex-flow: row wrap;
   justify-content: center;
@@ -181,10 +189,23 @@ button {
 .project-card:hover .project-card-text {
   opacity: 1;
 }
+.link-text:hover {
+  color: var(--link-hover);
+  font-weight: 600;
+}
 
 /*Main part - Contact me section*/
-.contact-link-item {
+.contact-links-container {
+  justify-content: space-around;
+}
+.contact-link-text {
   margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact-link-text:hover,
+.link-text:hover {
+  color: var(--link-hover);
 }
 
 /* Footer - Contact links */

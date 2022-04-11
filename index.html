@@ -23,14 +23,20 @@
     <header class="header-container">
       <nav class="stackable centered-on-cross nav-container">
         <div class="always-row nav-name">
-          <h1>Amelie's portfolio</h1>
+          <h1 class="name">Amelie's portfolio</h1>
           <button class="lang-btn" type="button">En</button>
           <!--This button will be developed in later version - It will allow to change the language of the portfolio-->
         </div>
         <div class="always-row navlinks-container">
-          <a class="navlinks-item" href="#about">About me</a>
-          <a class="navlinks-item" href="#projects">Projects</a>
-          <a class="navlinks-item" href="#contact">Contact</a>
+          <div>
+            <a class="navlinks-item" href="#about">About me</a>
+          </div>
+          <div>
+            <a class="navlinks-item" href="#projects">Projects</a>
+          </div>
+          <div>
+            <a class="navlinks-item" href="#contact">Contact</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -149,18 +155,18 @@
       <hr />
 
       <!--Contact me-->
-      <section class="contact-container" id="contact">
+      <section class="always-column contact-container" id="contact">
         <h2>How to contact me</h2>
-        <div class="always-row contact-links-container">
-          <a class="contact-link-item" href=""
-            ><i class="fa-brands fa-github"></i> Github
-          </a>
-          <a class="contact-link-item" href=""
-            ><i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-          <a class="contact-link-item" href=""
-            ><i class="fa-regular fa-envelope"></i> Email
-          </a>
+        <div class="stackable contact-links-container">
+          <div><a class="contact-link-item" href=""
+          ><i class="fa-brands fa-github"></i> Github
+          </a></div>
+          <div><a class="contact-link-item" href=""
+          ><i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a></div>
+          <div><a class="contact-link-item" href=""
+          ><i class="fa-regular fa-envelope"></i> Email
+          </a></div>
         </div>
       </section>
     </main>

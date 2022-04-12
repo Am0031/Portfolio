@@ -123,6 +123,16 @@ button {
 }
 
 /*Main part - Projects section*/
+h4 {
+  padding: 0.5rem;
+}
+
+.project-repo-link {
+  padding: 0.5rem;
+}
+.link-text {
+  color: var(--primary-variant);
+}
 
 /* This is the Project title and filter buttons */
 .project-menu {
@@ -211,6 +221,7 @@ button {
   justify-content: space-around;
 }
 .contact-link-text {
+  color: var(--primary-variant);
   margin: 10px;
   font-size: 1.5rem;
   font-weight: 600;

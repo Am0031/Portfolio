@@ -175,6 +175,9 @@ h4 {
   flex-flow: row wrap;
   justify-content: center;
 }
+h4 {
+  font-size: 1.2rem;
+}
 
 .project-card {
   width: 500px;

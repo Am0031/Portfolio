@@ -76,6 +76,10 @@ button {
 .contact-link-text {
   text-decoration: none;
 }
+/* This makes sure each section title has some padding for aesthetic purposes*/
+.section-title {
+  padding: 0.6rem 0 0.6rem 0;
+}
 
 /* Header - Nav bar */
 .nav-container {
@@ -130,6 +134,7 @@ button {
 .about-content-container {
   align-items: stretch;
 }
+
 .intro {
   align-items: center;
   box-sizing: border-box;
@@ -169,19 +174,20 @@ h4 {
 .project-menu {
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 0 0.6rem 0;
 }
 
 /* This is the larger card with the showcased project */
 .showcase-container {
   height: 500px;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid var(--primary-variant);
   position: relative;
 }
 .showcase-img {
+  display: flex;
+  justify-content: center;
   height: 80%;
-  width: 100%;
+  background-color: var(--primary);
   opacity: 0.75;
 }
 
@@ -213,7 +219,7 @@ h4 {
 .project-card {
   width: 500px;
   height: 500px;
-  border: 1px solid black;
+  border: 1px solid var(--primary-variant);
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -276,7 +282,7 @@ h4 {
   align-items: center;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 596px) {
   .stackable {
     display: flex;
     flex-direction: column;

@@ -21,7 +21,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  margin: 20px;
+  margin: 0px;
   background-color: var(--background);
   font-family: "Work Sans", sans-serif;
 }
@@ -81,12 +81,24 @@ button {
   padding: 0.6rem 0 0.6rem 0;
 }
 
-/* Header - Nav bar */
-.nav-container {
+/*This sets the margins of the main sections on the page*/
+.main-container {
+  margin: 0 20px 0px 20px;
+}
+
+/* Header & Footer - This sets the general style of both*/
+.nav-container,
+.footer-container {
   justify-content: space-between;
   background-color: var(--primary-variant);
   color: var(--text-white);
-  margin-bottom: 5px;
+  margin: 0;
+}
+.name {
+  font-family: "Kalam", cursive;
+}
+.footer-text {
+  padding: 0.5rem;
 }
 /* Header - Nav bar Language button - to be developped later*/
 .lang-menu {
@@ -276,11 +288,12 @@ h4 {
 }
 
 /* Footer - Contact links */
-.footer-container {
+/*.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  background-color: var(--primary-variant);
+}*/
 
 @media screen and (max-width: 596px) {
   .stackable {

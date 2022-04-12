@@ -297,8 +297,45 @@ h4 {
   }
   .showcase-container {
     height: 600px;
+    width: 85vw;
   }
 
+  .project-card {
+    width: 85vw;
+    height: 40vh;
+  }
+  .contact-links-container,
+  .contact-container {
+    justify-content: center;
+    align-items: center;
+  }
+  /* Filter buttons get combined into one drop down button - to be developed at next update*/
+}
+
+@media screen and (max-width: 300px) {
+  .stackable {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .intro-skills {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .showcase-container {
+    height: 600px;
+    width: 85vw;
+  }
+  h4,
+  .link-text {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
   .project-card {
     width: 85vw;
     height: 40vh;

@@ -42,6 +42,7 @@ button {
   background-color: var(--secondary);
   padding: 0.3rem;
   font-weight: bold;
+  margin: 0 1rem 0 1rem;
 }
 /* All the containers that need to be flex row are tagged with this class */
 .always-row {

@@ -222,6 +222,10 @@ h4 {
 /*Main part - Contact me section*/
 .contact-links-container {
   justify-content: space-around;
+  padding: 1rem;
+}
+.contact-link-item {
+  padding: 0.5rem;
 }
 .contact-link-text {
   color: var(--primary-variant);
@@ -257,6 +261,11 @@ h4 {
   .project-card {
     width: 85vw;
     height: 40vh;
+  }
+  .contact-links-container,
+  .contact-container {
+    justify-content: center;
+    align-items: center;
   }
   /* Filter buttons get combined into one drop down button - to be developed at next update*/
 }

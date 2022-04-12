@@ -30,19 +30,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 10px 10px 10px 10px;
+h6,
+p {
+  margin: 0;
 }
 
-p {
-  margin: 0 0.6rem 0 0.6rem;
-}
 button {
   border-radius: 4px;
   border: 2px solid var(--secondary-variant);
   color: var(--secondary-variant);
   background-color: var(--secondary);
-  padding: 5px;
+  padding: 0.3rem;
   font-weight: bold;
 }
 /* All the containers that need to be flex row are tagged with this class */
@@ -71,6 +69,13 @@ button {
   align-items: center;
 }
 
+/* This removes the underlining on all the links */
+.navlink-text,
+.link-text,
+.contact-link-text {
+  text-decoration: none;
+}
+
 /* Header - Nav bar */
 .nav-container {
   justify-content: space-between;
@@ -79,11 +84,12 @@ button {
   margin-bottom: 5px;
 }
 .nav-name,
+.navlinks-container,
 .navlink-text {
-  margin: 10px;
-  text-decoration: none;
+  padding: 0.66rem;
   color: var(--text-white);
 }
+
 .navlink-text:hover {
   color: var(--link-hover-light);
   font-weight: 600;
@@ -117,9 +123,12 @@ button {
 }
 
 /*Main part - Projects section*/
+
+/* This is the Project title and filter buttons */
 .project-menu {
   justify-content: space-between;
   align-items: center;
+  padding: 0.6rem 0 0.6rem 0;
 }
 
 /* This is the larger card with the showcased project */
@@ -134,13 +143,15 @@ button {
   width: 100%;
   opacity: 0.75;
 }
+
 .showcase-text-container {
   width: auto;
-  padding: 0.5rem;
+  padding: 0.66rem;
   flex-grow: 2;
   background-color: var(--card-text-box);
   width: 100%;
   opacity: 0.75;
+  overflow: hidden;
 }
 .showcase-container:hover .showcase-img {
   opacity: 1;
@@ -181,6 +192,7 @@ button {
   text-align: center;
   background-color: rgb(252, 243, 231);
   opacity: 0.75;
+  overflow: hidden;
 }
 
 .project-card:hover .image {

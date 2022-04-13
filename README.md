@@ -2,6 +2,12 @@
 
 This piece of work focuses on building the structure of my portfolio, focussing on the HTML and CSS parts, and deploying it to Github pages.
 
+## Deployed URL and GitHUb repository
+
+Link to Deployed page : [https://am0031.github.io/Portfolio/](https://am0031.github.io/Portfolio/)
+
+Link to Github repo : [https://github.com/Am0031/Portfolio](https://github.com/Am0031/Portfolio)
+
 ## Why a Portfolio
 
 A portfolio is an important tool which can be very helpful when looking for work as a web developer. This is a great platform to showcase the different projects worked on and give access to the code to recruiters so they can have a feel of the person's coding style.
@@ -243,9 +249,3 @@ Additional features that will be developed for the next update (with the use of 
 - A Filter option to filter the projects based on themes/groups which are still to be determined (use of data-tags)
 
 Note: For this version of the portfolio, these buttons are present only for display purposes, but are not functional and do not have the right format.
-
-## Deployed URL and GitHUb repository
-
-Link to Deployed page :
-
-Link to Github repo : [https://github.com/Am0031/Portfolio](https://github.com/Am0031/Portfolio)

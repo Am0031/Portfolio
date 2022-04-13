@@ -245,7 +245,7 @@ Navlinks and Contact links are also styled, and with a relevant colours dependin
 
 Additional features that will be developed for the next update (with the use of javascript) are:
 
-- A Language choice menu (to )
+- A Language choice menu (for the 3 languages I can work in)
 - A Filter option to filter the projects based on themes/groups which are still to be determined (use of data-tags)
 
 Note: For this version of the portfolio, these buttons are present only for display purposes, but are not functional and do not have the right format.

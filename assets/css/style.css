@@ -92,6 +92,13 @@ button {
 .main-container {
   margin: 0 20px 0px 20px;
 }
+/* This sets the shadow around the cards*/
+.intro,
+.intro-skills,
+.project-card,
+.showcase-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* Header & Footer - This sets the general style of both*/
 .nav-container,
@@ -150,7 +157,6 @@ button {
   box-sizing: border-box;
   width: 80%;
   background-color: var(--text-box);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0px 5px 0px 5px;
   padding: 5px;
 }
@@ -164,7 +170,6 @@ button {
 .intro-skills {
   width: 20%;
   background-color: var(--text-box);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0px 5px 0px 5px;
   padding: 5px;
 }
@@ -189,10 +194,6 @@ h4 {
 }
 .link-text {
   color: var(--primary-variant);
-}
-.showcase-container,
-.project-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* This is styling for the Project title and filter buttons */

@@ -20,7 +20,7 @@ The general steps that I followed to develop this templates are listed below:
 
 Some of the key technologies used here are:
 
-- HTML: semantics, links, fonts, fontawesome
+- HTML: semantic elements, links, google fonts, fontawesome
 - CSS: flexbox, media query, pseudo classes, root variables
 - GIT: Github repo, deployed github pages
 

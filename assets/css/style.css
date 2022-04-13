@@ -36,6 +36,12 @@ ul {
   margin: 0;
 }
 
+.showcase-text-container h3,
+.showcase-text-container p,
+.intro h3 {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
 button {
   border-radius: 4px;
   border: 2px solid var(--secondary-variant);
@@ -130,6 +136,7 @@ button {
 .navlink-text:hover {
   color: var(--link-hover-light);
   font-weight: 600;
+  border-bottom: 2px solid var(--link-hover-light);
 }
 
 /* Main part - About me section*/
@@ -147,6 +154,7 @@ button {
   margin: 0px 5px 0px 5px;
   padding: 5px;
 }
+
 .avatar {
   height: 150px;
   width: 150px;
@@ -182,6 +190,10 @@ h4 {
 .link-text {
   color: var(--primary-variant);
 }
+.showcase-container,
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* This is styling for the Project title and filter buttons */
 .project-menu {
@@ -197,7 +209,7 @@ h4 {
 .showcase-container {
   height: 800px;
   max-width: 1600px;
-  border: 2px solid var(--primary-variant);
+  border: 1px solid var(--card-text-box);
   position: relative;
 }
 .showcase-img {
@@ -217,6 +229,7 @@ h4 {
   opacity: 0.75;
   overflow: hidden;
 }
+
 .showcase-container:hover .showcase-img {
   opacity: 1;
 }
@@ -236,7 +249,7 @@ h4 {
 .project-card {
   width: 500px;
   height: 500px;
-  border: 1px solid var(--primary-variant);
+  border: 1px solid var(--card-text-box);
   margin: 5px;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,369 @@
+/* This section sets up the key variables and settings for the page*/
+:root {
+  --background: #eeeaf6;
+  --secondary: #eeeeee;
+  --primary: #baabda;
+  --primary-variant: #6145ae;
+  --secondary-variant: #424242;
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-box: #ffffff;
+  --card-text-box: rgb(252, 243, 231);
+  --link-hover: #8e2657;
+  --link-hover-light: #fdeff4;
+  --error: #d77fa1;
+}
+html {
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--background);
+  font-family: "Work Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.showcase-text-container h3,
+.showcase-text-container p,
+.intro h3 {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+button {
+  border-radius: 4px;
+  border: 2px solid var(--secondary-variant);
+  color: var(--secondary-variant);
+  background-color: var(--secondary);
+  padding: 0.3rem;
+  font-weight: bold;
+  margin: 0 1rem 0 1rem;
+}
+/* All the containers that need to be flex row are tagged with this class */
+.always-row {
+  display: flex;
+  flex-direction: row;
+}
+/* All the containers that need to be flex column are tagged with this class */
+.always-column {
+  display: flex;
+  flex-direction: column;
+}
+/* All the containers that need to change flex when the size of the screen changes are tagged with this class */
+.stackable {
+  display: flex;
+  flex-direction: row;
+}
+/* All the containers that need to be centered on the main flex axis are tagged with this class */
+.centered-on-main {
+  display: flex;
+  justify-content: center;
+}
+/* All the containers that need to be centered on the cross flex axis are tagged with this class */
+.centered-on-cross {
+  display: flex;
+  align-items: center;
+}
+
+/* This removes the underlining on all the links */
+.navlink-text,
+.link-text,
+.contact-link-text {
+  text-decoration: none;
+}
+/* This makes sure each section title has some padding for aesthetic purposes*/
+.section-title {
+  padding: 0.6rem 0 0.6rem 0;
+}
+
+/*This sets the margins of the main sections on the page*/
+.main-container {
+  margin: 0 20px 0px 20px;
+}
+/* This sets the shadow around the cards*/
+.intro,
+.intro-skills,
+.project-card,
+.showcase-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Header & Footer - This sets the general style of both*/
+.nav-container,
+.footer-container {
+  justify-content: space-between;
+  background-color: var(--primary-variant);
+  color: var(--text-white);
+  margin: 0;
+}
+.name {
+  font-family: "Kalam", cursive;
+}
+.footer-text {
+  padding: 0.5rem;
+}
+/* Header - Nav bar Language button - to be developed later - only aesthetic at this stage*/
+.lang-menu {
+  margin-left: 30px;
+  width: 50px;
+}
+.selected-lang {
+  cursor: pointer;
+}
+.selected-lang:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/gb.png);
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+/* Header - Nav links styling*/
+.nav-name,
+.navlinks-container,
+.navlink-text {
+  padding: 0.66rem;
+  color: var(--text-white);
+}
+
+.navlink-text:hover {
+  color: var(--link-hover-light);
+  font-weight: 600;
+  border-bottom: 2px solid var(--link-hover-light);
+}
+
+/* Main part - About me section*/
+.about-content-container {
+  align-items: stretch;
+}
+
+/* Main part - About me - Intro card with picture and text*/
+.intro {
+  align-items: center;
+  box-sizing: border-box;
+  width: 80%;
+  background-color: var(--text-box);
+  margin: 0px 5px 0px 5px;
+  padding: 5px;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+}
+/* Main part - About me - Skills list card*/
+.intro-skills {
+  width: 20%;
+  background-color: var(--text-box);
+  margin: 0px 5px 0px 5px;
+  padding: 5px;
+}
+.skills-title {
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.skills-list {
+  column-count: 2;
+}
+.skills-list li {
+  display: block;
+  padding: 0;
+}
+
+/*Main part - Projects section - General styling*/
+h4 {
+  padding: 0.5rem;
+}
+.project-repo-link {
+  padding: 0.5rem;
+}
+.link-text {
+  color: var(--primary-variant);
+}
+
+/* This is styling for the Project title and filter buttons */
+.project-menu {
+  justify-content: space-between;
+  align-items: center;
+}
+.link-text:hover {
+  color: var(--link-hover);
+  font-weight: 600;
+}
+
+/* This is styling for the larger card with the showcased project */
+.showcase-container {
+  height: 800px;
+  max-width: 1600px;
+  border: 1px solid var(--card-text-box);
+  position: relative;
+}
+.showcase-img {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  background-color: var(--primary);
+  opacity: 0.75;
+}
+
+.showcase-text-container {
+  width: auto;
+  padding: 0.66rem;
+  flex-grow: 2;
+  background-color: var(--card-text-box);
+  width: 100%;
+  opacity: 0.75;
+  overflow: hidden;
+}
+
+.showcase-container:hover .showcase-img {
+  opacity: 1;
+}
+.showcase-container:hover .showcase-text-container {
+  opacity: 1;
+}
+
+/* This is styling for the section with all the other project cards*/
+.project-container {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+.project-card {
+  width: 500px;
+  height: 500px;
+  border: 1px solid var(--card-text-box);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.project-card-img {
+  height: 80%;
+  background-color: white;
+  justify-content: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+}
+.project-card-text {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  background-color: var(--card-text-box);
+  opacity: 0.75;
+  overflow: hidden;
+}
+
+.project-card:hover .image {
+  opacity: 1;
+}
+.project-card:hover .project-card-text {
+  opacity: 1;
+}
+
+/*Main part - Contact me section*/
+.contact-links-container {
+  justify-content: space-around;
+  padding: 1rem;
+}
+.contact-link-item {
+  padding: 0.5rem;
+}
+.contact-link-text {
+  color: var(--primary-variant);
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact-link-text:hover,
+.link-text:hover {
+  color: var(--link-hover);
+}
+
+@media screen and (max-width: 596px) {
+  .stackable {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .intro-skills {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .showcase-container {
+    height: 600px;
+    width: 85vw;
+  }
+
+  .project-card {
+    width: 85vw;
+    height: 40vh;
+  }
+  .contact-links-container,
+  .contact-container {
+    justify-content: center;
+    align-items: center;
+  }
+  /* Filter buttons get combined into one drop down button - to be developed at next update*/
+}
+
+@media screen and (max-width: 300px) {
+  .stackable {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .intro-skills {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .showcase-container {
+    height: 600px;
+    width: 85vw;
+  }
+  h4,
+  .link-text {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+  .project-card {
+    width: 85vw;
+    height: 40vh;
+  }
+  .contact-links-container,
+  .contact-container {
+    justify-content: center;
+    align-items: center;
+  }
+  /* Filter buttons get combined into one drop down button - to be developed at next update*/
+}

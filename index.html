@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Amelie's Portfolio</title>
+    <meta name="description" content="portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Font for all text on the page - except the name-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font for the Name of the Portfolio-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link to the Stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/160a172e5c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header-container">
+      <nav class="stackable centered-on-cross nav-container">
+        <div class="always-row nav-name">
+          <h1 class="name">Amelie's portfolio</h1>
+          <!--This button will be developed in later version - It will allow to change the language of the portfolio-->
+          <div class="always-row lang-menu">
+            <div class="always-row centered-on-cross selected-lang">
+              English
+            </div>
+          </div>
+        </div>
+        <div class="always-row navlinks-container">
+          <div class="navlinks-item">
+            <a class="navlink-text" href="#about">About me</a>
+          </div>
+          <div class="navlinks-item">
+            <a class="navlink-text" href="#projects">Projects</a>
+          </div>
+          <div class="navlinks-item">
+            <a class="navlink-text" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main part of the page-->
+    <main class="main-container">
+      <!-- About me section-->
+      <section class="about-container" id="about">
+        <div class="section-title">
+          <h2>About me</h2>
+        </div>
+        <div class="stackable about-content-container">
+          <!--About me - Image + Paragraph-->
+          <div class="always-row intro" id="intro">
+            <div class="intro-img">
+              <img
+                class="avatar"
+                alt="avatar"
+                src="./assets/images/amelie.png"
+              />
+            </div>
+            <div class="always-column intro-text">
+              <h3>Amelie Pira</h3>
+              <p>
+                I am a motivated and friendly person with the ability to learn
+                and collaborate in rapidly changing environments. I've worked in
+                different industries, in a variety of setting and cultures, and
+                I want my work to remain interesting and challenging. That's why
+                I've chosen to move into web development!
+              </p>
+            </div>
+          </div>
+          <!-- About me - Skills list-->
+          <div class="always-column centered-on-main intro-skills">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-list">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>API</li>
+                <li>React</li>
+                <li>Node.JS</li>
+                <li>PWA</li>
+                <li>OOP</li>
+                <li>SQL</li>
+                <li>NoSQL</li>
+                <li>MVC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- My Projects-->
+      <section class="projects" id="projects">
+        <!--Projects - Title and future menu buttons-->
+        <div class="always-row section-title project-menu">
+          <h2>My projects</h2>
+          <div class="stackable project-filters">
+            <button class="filter-btn" type="radio" id="forms-btn">
+              Forms
+            </button>
+            <button class="filter-btn" type="radio" id="html-btn">HTML</button>
+            <button class="filter-btn" type="radio" id="games-btn">
+              Games
+            </button>
+          </div>
+        </div>
+        <!-- Projects - The section with all the project cards-->
+        <div class="always-column centered-on-cross">
+          <!-- Projects - The section with the showcased project in larger project card and additional details-->
+          <div
+            class="always-column centered-on-cross showcase-container"
+            id="showcase"
+          >
+            <div class="showcase-img">
+              <a href="http://www.westholmeplant.co.uk/" target="_blank"
+                ><img
+                  class="image"
+                  src="./assets/images/construction.png"
+                  alt="construction website picture"
+              /></a>
+            </div>
+            <div class="always-column centered-on-main showcase-text-container">
+              <h3>Construction company website</h3>
+              <p>
+                Working with an independent builder to develop a simple but
+                effective website and promote his services. The website offers
+                photos and description of previous renovation projects and a
+                contact form for potential new customers.
+              </p>
+              <div class="project-repo-link">
+                <a class="link-text" href="#" target="_blank"
+                  ><i class="fa-brands fa-github"></i> Go to Github
+                  repository</a
+                >
+                <a class="link-text" href="#" target="_blank"
+                  ><i class="fa-solid fa-earth-americas"></i> Go to the official
+                  website</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--Projects - The section with the projects card for all other projects-->
+          <div class="always-row project-container">
+            <div class="project-card" id="wordwheel" data-tag="games">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/wordwheel.png"
+                    alt="wordwheel project card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Wordwheel game website</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/wordwheel"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="semantic" data-tag="html">
+              <div class="project-card-img">
+                <a
+                  href="https://am0031.github.io/HTML-Semantics-Refactoring/"
+                  target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/semantics.png"
+                    alt="semantics project card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Refactor for HTML semantics</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/HTML-Semantics-Refactoring"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="portfolio" data-tag="html">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/portfolio.png"
+                    alt="portfolio card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Portfolio</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/Portfolio"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="pass-gen" data-tag="forms">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/password-gen.png"
+                    alt="password generator card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Password Generator</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/password-generator"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="code-quiz" data-tag="games">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/code-quiz.png"
+                    alt="code quiz card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Code Quiz</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/code-quiz"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="day-planner" data-tag="forms">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/day-planner.png"
+                    alt="day planner card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Day Planner</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/day-planner"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="weather" data-tag="forms">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/weather-dashboard.png"
+                    alt="weather dashboard card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Weather Dashboard</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/weather-dashboard"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card" id="project1" data-tag="games">
+              <div class="project-card-img">
+                <a href="#" target="_blank"
+                  ><img
+                    class="image"
+                    src="./assets/images/coming-soon.png"
+                    alt="project 1 coming soon card picture"
+                /></a>
+              </div>
+              <div class="always-column centered-on-main project-card-text">
+                <h4>Project 1 - Coming soon</h4>
+                <div class="project-repo-link">
+                  <a
+                    class="link-text"
+                    href="https://github.com/Am0031/project1"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i> Go to Github
+                    repository</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!--Contact me-->
+      <section class="always-column contact-container" id="contact">
+        <div class="section-title">
+          <h2>How to contact me</h2>
+        </div>
+        <div class="stackable centered-on-main contact-links-container">
+          <div class="contact-link-item">
+            <a
+              class="contact-link-text"
+              href="https://github.com/Am0031"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Github
+            </a>
+          </div>
+          <div class="contact-link-item">
+            <a
+              class="contact-link-text"
+              href="https://www.linkedin.com/in/amelie-pira-b4079855/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+          <div class="contact-link-item">
+            <a class="contact-link-text" href="mailto:amelie.pira@gmail.com"
+              ><i class="fa-regular fa-envelope"></i> Email
+            </a>
+          </div>
+          <div class="contact-link-item">
+            <a
+              class="contact-link-text"
+              href="https://drive.google.com/drive/folders/1AXHd3n651_Lz7kM1NCLaSoysOp2Oiz1w?usp=sharing"
+              target="_blank"
+              ><i class="fa-brands fa-google-drive"></i> My CV
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="always-row centered-on-main footer-container">
+      <div class="footer-text">My portfolio</div>
+      <div class="footer-text">&copy; 2022 - Amelie Pira</div>
+    </footer>
+  </body>
+</html>

@@ -43,12 +43,9 @@ The general steps that I followed to develop this templates are listed below in 
 - Using the css media query property to ensure that the page is responsive depending on the size of the screen
 - Using links and additional css such as pseudo classes for improved layout and interaction
 
-<details>
-<summary>This is the view of the completed portfolio</summary>
+This is a screenshot of the deployed portfolio :
 
 ![completed portfolio](/assets/images/portfolio-completed-view.png)
-
-</details>
 
 ## Technologies
 

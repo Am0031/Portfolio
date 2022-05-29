@@ -45,7 +45,7 @@ The general steps that I followed to develop this templates are listed below in 
 
 This is a screenshot of the deployed portfolio :
 
-![completed portfolio](/assets/images/portfolio-completed-view.png)
+![deployed portfolio](/assets/images/portfolio-completed-view.png)
 
 ## Technologies
 

@@ -23,7 +23,7 @@ html {
 body {
   margin: 0;
   background-color: var(--background);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -180,6 +180,12 @@ button {
 .skills-list {
   column-count: 2;
 }
+
+.skills-list ul {
+  padding: 0;
+  text-align: center;
+}
+
 .skills-list li {
   display: block;
   padding: 0;

@@ -129,7 +129,8 @@ button {
   height: 15px;
   background-image: url(../images/gb.png);
   background-repeat: no-repeat;
-  object-fit: fill;
+  object-fit: cover;
+  margin: 0 5px 0 5px;
 }
 
 /* Header - Nav links styling*/

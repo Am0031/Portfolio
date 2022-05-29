@@ -1,5 +1,7 @@
 # Portfolio
 
+## Summary of the project
+
 This piece of work focuses on building the structure of my portfolio, focussing on the HTML and CSS parts, and deploying it to Github pages.
 
 ## Deployed URL and GitHUb repository
@@ -7,6 +9,18 @@ This piece of work focuses on building the structure of my portfolio, focussing 
 Link to Deployed page : [https://am0031.github.io/Portfolio/](https://am0031.github.io/Portfolio/)
 
 Link to Github repo : [https://github.com/Am0031/Portfolio](https://github.com/Am0031/Portfolio)
+
+## Table of content
+
+- [Why a Portfolio](#why-a-portfolio)
+- [Development steps](#development-steps)
+- [Technologies](#technologies)
+- [Wireframe design](#wireframe-design)
+- [HTML skeleton](#html-skeleton)
+- [CSS for page structure](#css-for-page-structure)
+- [CSS for page responsiveness](#css-for-page-responsiveness)
+- [CSS for improved interactio ](#css-for-improved-interaction)
+- [Upcoming features](#upcoming-features)
 
 ## Why a Portfolio
 
@@ -44,7 +58,7 @@ Some of the key technologies used here are:
 - CSS: flexbox, media query, pseudo classes, root variables
 - GIT: Github repo, deployed github pages
 
-## 1 - The wireframe design
+## Wireframe design
 
 When drawing the wireframe, I took the following aspects into consideration:
 
@@ -68,7 +82,7 @@ See below the wireframes designed for this portfolio:
 
 </details>
 
-## 2 - The HTML skeleton
+## HTML skeleton
 
 From the wireframe design, the skeleton structure can be built in html applying the corresponding structure of divs.
 
@@ -81,7 +95,7 @@ From the wireframe design, the skeleton structure can be built in html applying 
 
 Where relevant, semantic elements were used to cater for accessibility of the page.
 
-## 3 - CSS styling for page structure
+## CSS for page structure
 
 With the correct divisions in place, their positioning on the page and their responsiveness depends on the use flexbox container and properties, which I approached in the following way:
 
@@ -125,7 +139,7 @@ Our last example shows how the contact container is assigned the class "stackabl
 
 </details>
 
-## 4 - CSS styling for responsiveness of the page
+## CSS for Page responsiveness
 
 In order for the flex containers to be responsive to a certain size of screen, a media query is used and certain items are redefined such as :
 
@@ -158,7 +172,7 @@ See below the full screenshots for both mobile and desktop versions and the layo
 
 </details>
 
-## 5 - CSS styling for an improved interaction
+## CSS for improved interaction
 
 ### Functional links
 

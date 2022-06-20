@@ -24,13 +24,16 @@ const createCardHtml = (repo) => {
   </div>`;
 };
 
-const alertMessage = `<div class="alert-message text-center">
-Failed to retrieve the data. Please visit the github page directly at: https://github.com/Am0031?tab=repositories.
+const createAlertMessage = (username) => {
+  return `<div class="alert-message text-center">
+Failed to retrieve the data. Please visit the github page directly at: https://github.com/${username}?tab=repositories.
 </div>`;
+};
 
-const renderAlert = () => {
+const renderAlert = (username) => {
+  const alertHtml = createAlertMessage(username);
   //append alert message to the project container
-  $("#project-container").append(alertMessage);
+  $("#project-container").append(alertHtml);
 };
 
 const renderRepos = (repos) => {
@@ -56,12 +59,13 @@ const getRepos = async (username) => {
   }
 };
 
-//Async Main function - on load of page
+//Async Main function - triggered on load of page
 const onReady = async () => {
+  const username = "Am0031";
   //get my public repos from github api
-  const repos = await getRepos("Am0031");
+  const repos = await getRepos(username);
   //render the repo cards in the project container
-  repos ? renderRepos(repos) : renderAlert();
+  repos ? renderRepos(repos) : renderAlert(username);
 };
 
 //On page load

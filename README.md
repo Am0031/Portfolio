@@ -6,9 +6,9 @@ This piece of work focuses on building the structure of my portfolio, focussing 
 
 ## Deployed URL and GitHUb repository
 
-Link to Deployed page : [https://am0031.github.io/Portfolio/](https://am0031.github.io/Portfolio/)
+Link to Deployed page : [https://am0031.github.io/Portfolio/](https://am0031.github.io/portfolio/)
 
-Link to Github repo : [https://github.com/Am0031/Portfolio](https://github.com/Am0031/Portfolio)
+Link to Github repo : [https://github.com/Am0031/Portfolio](https://github.com/Am0031/portfolio)
 
 ## Table of content
 

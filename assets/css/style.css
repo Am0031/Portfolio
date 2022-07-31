@@ -89,11 +89,16 @@ button {
 }
 
 /*This sets the margins of the main sections on the page*/
-.main-container {
-  margin: 0 20px 0px 20px;
+.main-container,
+.section-container {
+  margin: 0;
 }
+.section-container {
+  padding: 20px;
+}
+
 /* This sets the shadow around the cards*/
-.intro,
+.intro-text,
 .intro-skills,
 .project-card,
 .showcase-container {
@@ -148,6 +153,12 @@ button {
 }
 
 /* Main part - About me section*/
+.about-container {
+  min-height: 500px;
+  background-image: url(../images/about-me-img1.jpg);
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
 .about-content-container {
   align-items: stretch;
 }
@@ -156,10 +167,14 @@ button {
 .intro {
   align-items: center;
   box-sizing: border-box;
-  width: 80%;
+  width: 60%;
+  /* background-color: var(--text-box); */
+  /* margin: 0px 5px 0px 5px;
+  padding: 5px; */
+}
+.intro-text {
+  padding: 1rem;
   background-color: var(--text-box);
-  margin: 0px 5px 0px 5px;
-  padding: 5px;
 }
 
 .avatar {
@@ -169,7 +184,7 @@ button {
 }
 /* Main part - About me - Skills list card*/
 .intro-skills {
-  width: 20%;
+  width: 40%;
   background-color: var(--text-box);
   margin: 0px 5px 0px 5px;
   padding: 5px;

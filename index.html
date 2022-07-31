@@ -55,13 +55,13 @@
     <!--Main part of the page-->
     <main class="main-container">
       <!-- About me section-->
-      <section class="about-container" id="about">
+      <section class="about-container section-container" id="about">
         <div class="section-title">
           <h2>About me</h2>
         </div>
         <div class="stackable about-content-container">
           <!--About me - Image + Paragraph-->
-          <div class="always-row intro" id="intro">
+          <div class="always-column intro" id="intro">
             <div class="intro-img">
               <img
                 class="avatar"
@@ -101,10 +101,9 @@
           </div>
         </div>
       </section>
-      <hr />
 
       <!-- My Projects-->
-      <section class="projects" id="projects">
+      <section class="projects section-container" id="projects">
         <!--Projects - Title and future menu buttons-->
         <div class="always-row section-title project-menu">
           <h2>My projects</h2>
@@ -112,10 +111,8 @@
             <button class="filter-btn" type="radio" id="forms-btn">
               Forms
             </button>
-            <button class="filter-btn" type="radio" id="html-btn">HTML</button>
-            <button class="filter-btn" type="radio" id="games-btn">
-              Games
-            </button>
+            <button class="filter-btn" type="radio" id="html-btn">API</button>
+            <button class="filter-btn" type="radio" id="games-btn">SQL</button>
           </div>
         </div>
         <!-- Projects - The section with all the project cards-->
@@ -126,10 +123,12 @@
           ></div>
         </div>
       </section>
-      <hr />
 
       <!--Contact me-->
-      <section class="always-column contact-container" id="contact">
+      <section
+        class="always-column contact-container section-container"
+        id="contact"
+      >
         <div class="section-title">
           <h2>How to contact me</h2>
         </div>

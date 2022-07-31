@@ -2,13 +2,13 @@
 
 ## Summary of the project
 
-This piece of work focuses on building the structure of my portfolio, focussing on the HTML and CSS parts, and deploying it to Github pages.
+This piece of work focuses on building a polished and responsive portfolio, which always showcases an updated view of my github projects.
 
 ## Deployed URL and GitHUb repository
 
-Link to Deployed page : [https://am0031.github.io/Portfolio/](https://am0031.github.io/portfolio/)
+Link to Deployed page : [https://am0031.github.io/portfolio/](https://am0031.github.io/portfolio/)
 
-Link to Github repo : [https://github.com/Am0031/Portfolio](https://github.com/Am0031/portfolio)
+Link to Github repo : [https://github.com/Am0031/portfolio](https://github.com/Am0031/portfolio)
 
 ## Table of content
 
@@ -38,14 +38,15 @@ There are also many websites with examples of portfolios, the two suggestions be
 The general steps that I followed to develop this templates are listed below in order:
 
 - Developing the wireframe design for mobile display and desktop display
-- Building the skeleton html structure with the sections and divs as per the wireframe
-- Using the css flexbox properties to help set the correct positioning of each div
+- Building the skeleton html structure and using the css flexbox properties to help set the correct positioning of each div
 - Using the css media query property to ensure that the page is responsive depending on the size of the screen
-- Using links and additional css such as pseudo classes for improved layout and interaction
+- Using the github api to retrieve an updated list of my public repos and create the corresponding cards
 
 This is a screenshot of the deployed portfolio :
 
-![deployed portfolio](/assets/images/portfolio-completed-view.png)
+Desktop view:
+
+![deployed portfolio](/assets/images/desktop-portfolio-complete-view.png)
 
 ## Technologies
 
@@ -54,14 +55,9 @@ Some of the key technologies used here are:
 - HTML: semantic elements, links, google fonts, fontawesome
 - CSS: flexbox, media query, pseudo classes, root variables
 - GIT: Github repo, deployed github pages
+- API: GitHub api
 
 ## Wireframe design
-
-When drawing the wireframe, I took the following aspects into consideration:
-
-- start with laying down the view of the large sections wanted on the page and labelling them accordingly (header, footer, main, nav)
-- understand what populates each section and the positions of the elements inside them so the right divisions can be applied
-- compare divisions for mobile screen version and desktop screen version to make sure that one structure of divs works for both layouts
 
 See below the wireframes designed for this portfolio:
 
@@ -79,22 +75,9 @@ See below the wireframes designed for this portfolio:
 
 </details>
 
-## HTML skeleton
-
-From the wireframe design, the skeleton structure can be built in html applying the corresponding structure of divs.
-
-<details>
-<summary>This screenshot shows that the html structure shown here matches the first two levels shows on the wireframes: </summary>
-
-![screenshot of html structure levels 1 and 2](/assets/images/screenshot-html-skeleton1.png)
-
-</details>
-
-Where relevant, semantic elements were used to cater for accessibility of the page.
-
 ## CSS for page structure
 
-With the correct divisions in place, their positioning on the page and their responsiveness depends on the use flexbox container and properties, which I approached in the following way:
+With the html skeleton built to reflect the wireframe, the positioning of sections on the page and their responsiveness depends on the use flexbox container and properties, which I approached in the following way:
 
 - I identified the main three behaviours of my containers:
   - my container needs to have its elements in a row and this is true for both mobile and desktop layouts
@@ -148,26 +131,6 @@ For this portfolio, the two following media queries have been set:
 
 - media query for phone screen under a width of 596px
 - media query for phone screen under a width of 300px
-
-See below the code for the media query : max screen width: 596px
-
-![code media query](/assets/images/screenshot-mediaquery.png)
-
-See below the full screenshots for both mobile and desktop versions and the layout differences between the two views:
-
-<details>
-<summary>Mobile page</summary>
-
-![Mobile view of the page](/assets/images/mobile-screenshot-full.png)
-
-</details>
-
-<details>
-<summary>Desktop page</summary>
-
-![Desktop view of the page](/assets/images/portfolio-completed-view.png)
-
-</details>
 
 ## CSS for improved interaction
 

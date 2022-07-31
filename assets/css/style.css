@@ -4,6 +4,7 @@
   --secondary: #eeeeee;
   --primary: #baabda;
   --primary-variant: #6145ae;
+  --primary-variant-alternative: #9c7df0;
   --secondary-variant: #424242;
   --text-black: #000000;
   --text-white: #ffffff;
@@ -44,12 +45,12 @@ ul {
 
 button {
   border-radius: 4px;
-  border: 2px solid var(--secondary-variant);
-  color: var(--secondary-variant);
-  background-color: var(--secondary);
+  border: 2px solid var(--primary-variant);
+  color: var(--primary-variant);
+  background-color: var(--text-white);
   padding: 0.3rem;
   font-weight: bold;
-  margin: 0 1rem 0 1rem;
+  margin: 1rem;
 }
 /* All the containers that need to be flex row are tagged with this class */
 .always-row {
@@ -93,15 +94,16 @@ button {
 .section-container {
   margin: 0;
 }
-.section-container {
-  padding: 20px;
+
+.title-text {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* This sets the shadow around the cards*/
 .intro-text,
-.intro-skills,
 .project-card,
-.showcase-container {
+.featured-project-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -167,14 +169,11 @@ button {
 .intro {
   align-items: center;
   box-sizing: border-box;
-  width: 60%;
-  /* background-color: var(--text-box); */
-  /* margin: 0px 5px 0px 5px;
-  padding: 5px; */
 }
 .intro-text {
   padding: 1rem;
   background-color: var(--text-box);
+  margin: 10px;
 }
 
 .avatar {
@@ -184,20 +183,16 @@ button {
 }
 /* Main part - About me - Skills list card*/
 .intro-skills {
-  width: 40%;
   background-color: var(--text-box);
-  margin: 0px 5px 0px 5px;
   padding: 5px;
 }
 .skills-title {
   text-align: center;
   margin: 0.5rem 0 0.5rem 0;
 }
-.skills-list {
-  column-count: 2;
-}
 
 .skills-list ul {
+  flex-flow: row wrap;
   padding: 0;
   text-align: center;
 }
@@ -205,6 +200,7 @@ button {
 .skills-list li {
   display: block;
   padding: 0;
+  margin: 0.5rem;
 }
 
 /*Main part - Projects section - General styling*/
@@ -228,14 +224,58 @@ h4 {
   font-weight: 600;
 }
 
-/* This is styling for the larger card with the showcased project */
-.showcase-container {
-  height: 800px;
-  max-width: 1600px;
+/* This is styling for the larger card with the featured project */
+.featured-project {
+  background-color: var(--primary-variant-alternative);
+}
+.featured-project-container {
+  /* min-height: 600px; */
+  width: 80%;
   border: 1px solid var(--card-text-box);
   position: relative;
 }
-.showcase-img {
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.featured-project-card {
+  width: 100%;
+  /* height: 300px; */
+  border: 1px solid var(--card-text-box);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.featured-project-card-img {
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+}
+
+.featured-image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  object-fit: fill;
+}
+.featured-project-card-text {
+  width: 100%;
+  /* height: 20%; */
+  text-align: center;
+  background-color: var(--card-text-box);
+  opacity: 0.75;
+  overflow: hidden;
+}
+
+.featured-project-card:hover .featured-image {
+  opacity: 1;
+}
+.featured-project-card:hover .featured-project-card-text {
+  opacity: 1;
+}
+/* .showcase-img {
   display: flex;
   justify-content: center;
   height: 80%;
@@ -258,20 +298,21 @@ h4 {
 }
 .showcase-container:hover .showcase-text-container {
   opacity: 1;
-}
+} */
 
 /* This is styling for the section with all the other project cards*/
 .project-container {
   flex-flow: row wrap;
   justify-content: center;
+  padding: 2rem 0 2rem 0;
 }
 h4 {
   font-size: 1.2rem;
 }
 
 .project-card {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   border: 1px solid var(--card-text-box);
   margin: 5px;
   display: flex;
@@ -306,6 +347,10 @@ h4 {
 }
 
 /*Main part - Contact me section*/
+.contact-container {
+  padding-top: 2rem;
+  background-color: var(--text-white);
+}
 .contact-links-container {
   justify-content: space-around;
   padding: 1rem;
@@ -335,7 +380,6 @@ h4 {
   }
   .intro-skills {
     width: 100%;
-    margin: 5px 0px 5px 0px;
   }
   .showcase-container {
     height: 600px;

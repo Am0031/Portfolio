@@ -227,7 +227,7 @@ h4 {
 /* This is styling for the larger card with the featured project */
 .featured-project {
   background-color: var(--primary-variant-alternative);
-  padding-top: 1rem;
+  padding: 1rem 0 2rem 0;
 }
 .featured-project-container {
   /* min-height: 600px; */
@@ -284,7 +284,7 @@ h4 {
 .project-container {
   flex-flow: row wrap;
   justify-content: center;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 h4 {
   font-size: 1.2rem;

@@ -63,7 +63,10 @@ const getRepos = async (username) => {
 const onReady = async () => {
   const username = "Am0031";
   //get my public repos from github api
-  const repos = await getRepos(username);
+  const allRepos = await getRepos(username);
+  const repos = allRepos
+    .filter((i) => i.name !== "Am0031")
+    .filter((i) => i.name !== "coding-mentoring");
   //render the repo cards in the project container
   repos ? renderRepos(repos) : renderAlert(username);
 };
